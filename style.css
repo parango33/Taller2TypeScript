@@ -1,0 +1,27 @@
+#nombre{
+    font-size: 50px;
+    color:black;
+    margin: 20px;
+    padding: 10px;
+}
+
+.col{
+    margin: 20px;
+    padding: 10px;
+}
+
+.card{
+    margin: 20px;
+    padding: 15px;
+    
+}
+
+.form-row{
+    padding: 10px;
+    
+}
+
+h4{
+    font-size: large;
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 id = "nombre" >Pablo Arango</h1>
+                <img class="img-fluid max-width: 100% height: auto" src="https://i.imgur.com/HAbwm3n.jpg"  alt="Avatar">
+                <div class="card" style="width: 100%">
+                    <h2> Datos Personales </h2> 
+                    <table class ="table table-hover">
+                        <thead>
+                            <tr>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="student">
+                            
+                        </tbody>                        
+                    </table>
+                </div>    
+            </div>
+            
+            
+            <div class="col">
+                <div class="card" style="width: 100%">   
+                    <h2>Cursos Actuales</h2>
+                    <form style="margin:1px;">
+                        <div class="form-row">
+                            <div class="col-6">
+                                <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                            </div>
+                            <div class="col-6">
+                                <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                            </div>
+                        </div>
+                    </form>
+                    <h4>Filtrar por rango</h4>
+                    <form style="margin:1px;">
+                        <div class="form-row">
+                            <div class="col-4">
+                                <input type="text" class="form-control" id="search-boxRango1" placeholder="Rango1">
+                            </div>
+                            <div class="col-4">
+                                <input type="text" class="form-control" id="search-boxRango2" placeholder="Rango2">
+                            </div>
+                            <div class="col-4">
+                                <button type="button" id="button-filterByCredits" class="btn btn-success">Aplicar</button>
+                            </div>
+                        </div>
+                    </form>
+                    <table class ="table table-hover">
+                            <thead class="thead-dark" >
+                                <tr>
+                                    <th scope="col">Curso</th>
+                                    <th scope="col">Profesor</th>
+                                    <th scope="col">Creditos</th>
+                                </tr>
+                            </thead>
+                            <tbody id="courses">
+                            </tbody>    
+                    </table>
+                    <div class="row" style="text-align:center">       
+                        <div class="col-md-8" style="text-align:right" >   
+                            <h3>Total creditos: </h3>
+                        </div>                
+                        <div class="col-6 col-md-4" style="text-align:left">   
+                            <h3 id ="total-credits"></h3>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+     <script type="module" src="./scripts/course.js" ></script>
+     <script type="module" src="./scripts/dataCourses.js" ></script>
+     <script type="module" src="./scripts/main.js"></script>
+     <script type="module" src="./scripts/dataStudent.js" ></script>
+     <script type="module" src="./scripts/student.js"></script>
+</body>
+
+
+</html>
